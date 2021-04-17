@@ -1,8 +1,8 @@
 const ko = require('nekodb')
 
 let PreProps = {
-  name: ko.String.default(''),
-  desc: ko.String.default(''),
+  name: ko.String.optional(),
+  desc: ko.String.optional(),
   is_actived: ko.Number.default(1),
   is_deleted: ko.Number.default(0),
   created_at: ko.Number.now(),
